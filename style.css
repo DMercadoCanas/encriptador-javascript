@@ -6,33 +6,36 @@
   padding: 0;
 }
 
+.linea-principal {
+  display: flex;
+  height: 100%;
+  margin: 0;
+}
+
 /* LOGO ALURA */
+
+.logo-alura {
+  margin-top: 1px;
+}
 
 .logo-alura img {
   padding-left: 40px;
   padding-top: 40px;
-  position: relative;
-  border: 1px solid black;
 }
 
 /* CAJA PRINCIPAL */
 
-.linea-principal {
-  display: flex;
+.right-principal {
   align-items: center;
   justify-content: center;
-  margin: 0;
-  border: 1px solid black;
-}
-
-.right-principal {
   flex-direction: column;
-  margin: 10px;
+  margin-top: 150px;
+  margin-left: 50px;
 }
 
 .caja-texto {
   width: 680px;
-  height: 288px;
+  height: 270px;
   max-width: 100%;
   overflow: hidden;
 }
@@ -60,7 +63,7 @@
 
 .advertencia {
   display: flex;
-  margin-top: 30px;
+  margin-top: 100px;
   gap: 8px;
 }
 
@@ -97,9 +100,17 @@
 }
 
 .encriptar {
-  background: #0a3871;
+  background-color: #0a3871;
   color: #ffffff;
   border: none;
+  transition: background-color 0.2s;
+}
+
+.encriptar:hover {
+  background-color: #ffffff;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+  cursor: pointer;
 }
 
 .desencriptar {
@@ -107,10 +118,56 @@
   border: 1px solid #0a3871;
 }
 
+.desencriptar:hover {
+  background-color: #d8dfe8;
+  cursor: pointer;
+}
+
 /* CAJA LATERAL */
 
 .caja-lateral {
-  border: 1px solid black;
-  position: relative;
-  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  margin-top: 40px;
+  margin-left: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px #00000014;
+}
+
+.imagen-lateral img {
+  background: #ffffff;
+}
+
+.mensajes {
+  width: 300px;
+  background: #ffffff;
+}
+
+.primer-mensaje {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  background: #ffffff;
+}
+
+.segundo-mensaje {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #495057;
+  margin-top: 15px;
+  background: #ffffff;
 }

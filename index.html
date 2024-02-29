@@ -11,15 +11,31 @@
       rel="stylesheet"
     />
     <title>Encriptador</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Galeria/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Galeria/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Galeria/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="Galeria/favicon_io/site.webmanifest" />
   </head>
   <body>
-    <header>
-      <section class="logo-alura">
-        <img src="Galeria/LogoAlura.svg" alt="Logo de alura" srcset="" />
-      </section>
-    </header>
     <main>
       <section class="linea-principal">
+        <div class="logo-alura">
+          <img src="Galeria/LogoAlura.svg" alt="Logo de alura" srcset="" />
+        </div>
         <div class="right-principal">
           <div class="caja-texto">
             <textarea
@@ -42,9 +58,16 @@
         </div>
 
         <div class="caja-lateral">
-          <img src="Galeria/Muñecolateral.svg" alt="Imagen lateral" />
-          <p>Ningún mensaje fue encontrado</p>
-          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          <div class="imagen-lateral">
+            <img src="Galeria/Muñecolateral.svg" alt="Imagen lateral" />
+          </div>
+
+          <div class="mensajes">
+            <p class="primer-mensaje">Ningún mensaje fue encontrado</p>
+            <p class="segundo-mensaje">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
         </div>
       </section>
     </main>
