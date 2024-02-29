@@ -57,6 +57,11 @@
 
 ::placeholder {
   color: #0a3871;
+  opacity: 20%;
+}
+
+.hide-placeholder::placeholder {
+  color: transparent;
 }
 
 /* ADVERTENCIA */
